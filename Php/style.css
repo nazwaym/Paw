@@ -1,0 +1,337 @@
+/* === GLOBAL STYLE === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f8f8f8;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* ====================================================================
+   HEADER
+==================================================================== */
+.header {
+    background: #ffffff;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    padding: 15px 0;
+    margin-bottom: 30px;
+}
+
+.header-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    color: #dd2f3b;
+    font-weight: 700;
+    margin: 0;
+}
+
+.navbar a {
+    margin-left: 20px;
+    font-size: 15px;
+    color: #444;
+    font-weight: 500;
+    transition: 0.25s;
+}
+
+.navbar a:hover {
+    color: #dd2f3b;
+}
+
+@media(max-width: 600px) {
+    .header-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar a {
+        margin: 0 10px;
+    }
+}
+
+
+/* ====================================================================
+   FOOTER
+==================================================================== */
+footer {
+    margin-top: 50px;
+    padding: 25px;
+    background: #ffffff;
+    text-align: center;
+    color: #666;
+    border-top: 2px solid #f1d1d1;
+}
+
+
+/* ====================================================================
+   HOME PAGE (INDEX)
+==================================================================== */
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    padding: 40px 20px;
+}
+
+.home-card {
+    background: #fff;
+    padding: 50px 40px;
+    width: 100%;
+    max-width: 550px;
+    border-radius: 22px;
+    box-shadow: 0 10px 28px rgba(0,0,0,0.08);
+    text-align: center;
+    animation: fadeIn 0.7s ease;
+}
+
+.home-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.home-subtext {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 35px;
+}
+
+.home-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-outline {
+    padding: 13px 26px;
+    border-radius: 10px;
+    border: 2px solid #e84749;
+    background: transparent;
+    color: #e84749;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-outline:hover {
+    background: #e84749;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+
+/* ====================================================================
+   AUTH PAGE (LOGIN & REGISTER)
+==================================================================== */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    min-height: 70vh;
+}
+
+.auth-card {
+    background: #fff;
+    width: 100%;
+    max-width: 420px;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+    animation: fadeIn 0.5s ease;
+}
+
+.auth-title {
+    font-size: 26px;
+    margin-bottom: 8px;
+    text-align: center;
+    font-weight: 600;
+    color: #333;
+}
+
+.auth-subtext {
+    color: #777;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.auth-form .input-group {
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1.5px solid #ddd;
+    font-size: 15px;
+    transition: 0.25s;
+}
+
+.input-group input:focus {
+    border-color: #e84749;
+    box-shadow: 0 0 0 3px rgba(232, 71, 73, 0.15);
+    outline: none;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 13px;
+    background: #e84749;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.btn-primary:hover {
+    background: #c73739;
+    transform: translateY(-2px);
+}
+
+.auth-footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+}
+
+.auth-footer a {
+    color: #e84749;
+    font-weight: 600;
+}
+
+.auth-footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* ====================================================================
+   DASHBOARD PAGE
+==================================================================== */
+.dashboard-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.dashboard-card {
+    background: #fff;
+    width: 100%;
+    max-width: 500px;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+    text-align: center;
+    animation: fadeIn 0.5s ease;
+}
+
+.dashboard-card h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.dashboard-card h1 span {
+    color: #e84749;
+    font-weight: 700;
+}
+
+.subtext {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+/* Dashboard Logout Button */
+.btn-logout {
+    background: #e84749;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.25s;
+    width: 100%;
+    max-width: 200px;
+}
+
+.btn-logout:hover {
+    background: #c73739;
+    transform: translateY(-2px);
+}
+
+
+/* ====================================================================
+   NOT LOGIN WARNING
+==================================================================== */
+.login-warning {
+    text-align: center;
+    background: #fff2f2;
+    padding: 18px 25px;
+    border-left: 4px solid #e84749;
+    border-radius: 10px;
+    color: #7a3a3a;
+    font-size: 15px;
+    width: 100%;
+    max-width: 480px;
+    margin: 25px auto;
+    animation: fadeIn 0.6s ease;
+}
+
+
+/* ====================================================================
+   ANIMATION
+==================================================================== */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* ====================================================================
+   RESPONSIVE
+==================================================================== */
+@media (max-width: 480px) {
+    .dashboard-card,
+    .auth-card,
+    .home-card {
+        padding: 30px;
+    }
+
+    .dashboard-card h1 {
+        font-size: 22px;
+    }
+}
